@@ -3,6 +3,7 @@
 * [Initial page](README.md)
 * [pages](pages/README.md)
   * [features](pages/features/README.md)
+    * [Feature Y](pages/features/feature-y.md)
     * [Feature X](pages/features/feature-x.md)
     * [Themes](pages/features/themes.md)
     * [Next.js Image](pages/features/image.md)
