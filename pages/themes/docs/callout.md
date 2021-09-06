@@ -6,20 +6,15 @@ import Callout from 'nextra-theme-docs/callout'
 
 ## Example
 
-<Callout>
-  A **callout** is a short piece of text intended to attract attention.
-</Callout>
+ A \*\*callout\*\* is a short piece of text intended to attract attention.
 
 ## Usage
 
 ### Default
 
-<Callout emoji="👾">
-  **Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
-  Nishikado.
-</Callout>
+ \*\*Space Invaders\*\* is a 1978 shoot 'em up arcade game developed by Tomohiro Nishikado.
 
-```mdx
+```text
 import Callout from 'nextra-theme-docs/callout'
 
 <Callout emoji="👾">
@@ -30,11 +25,9 @@ import Callout from 'nextra-theme-docs/callout'
 
 ### Warning
 
-<Callout type="warning" emoji="⚠️">
-  This API will be deprecated soon.
-</Callout>
+ This API will be deprecated soon.
 
-```mdx
+```text
 import Callout from 'nextra-theme-docs/callout'
 
 <Callout type="warning" emoji="⚠️">
@@ -44,14 +37,13 @@ import Callout from 'nextra-theme-docs/callout'
 
 ### Error
 
-<Callout type="error" emoji="🚫">
-  This is a dangerous feature that can cause everything to explode.
-</Callout>
+ This is a dangerous feature that can cause everything to explode.
 
-```mdx
+```text
 import Callout from 'nextra-theme-docs/callout'
 
 <Callout type="error" emoji="️🚫">
   This is a dangerous feature that can cause everything to explode.
 </Callout>
 ```
+

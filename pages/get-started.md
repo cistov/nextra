@@ -11,12 +11,10 @@ Once done, every change in the repository will be deployed automatically.
 
 ## Create Manually
 
-Nextra works like a Next.js plugin, and it accepts a theme config (layout) to render the page. To start:
+Nextra works like a Next.js plugin, and it accepts a theme config \(layout\) to render the page. To start:
 
 1. Install Next.js, Nextra and React: `yarn add next nextra react react-dom`
-
-2. Install the docs theme (you can use any theme you like): `yarn add nextra-theme-docs`
-
+2. Install the docs theme \(you can use any theme you like\): `yarn add nextra-theme-docs`
 3. Create the following Next.js config:
 
 ```jsx
@@ -29,7 +27,7 @@ const withNextra = require('nextra')({
 module.exports = withNextra()
 ```
 
-4. Create a `theme.config.js` file for the docs theme:
+1. Create a `theme.config.js` file for the docs theme:
 
 ```jsx
 // theme.config.js
@@ -61,7 +59,7 @@ export default {
 }
 ```
 
-5. Create `pages/_app.js` and include the theme stylesheet:
+1. Create `pages/_app.js` and include the theme stylesheet:
 
 ```jsx
 import 'nextra-theme-docs/style.css'
@@ -71,20 +69,12 @@ export default function Nextra({ Component, pageProps }) {
 }
 ```
 
-6. You are good to go! Run `yarn next` to start.
-
----
+1. You are good to go! Run `yarn next` to start.
 
 import Callout from 'nextra-theme-docs/callout'
 
-<span id="sidebar-and-anchor-links" />
-<Callout>
-  Any `.md` or `.mdx` file will turn into a doc page and be displayed in
-  sidebar. You can also create a `meta.json` file to customize the page order
-  and title. <br /> Check the source code: https://github.com/shuding/nextra for
-  more information.
-</Callout>
+ Any \`.md\` or \`.mdx\` file will turn into a doc page and be displayed in sidebar. You can also create a \`meta.json\` file to customize the page order and title.  
+ Check the source code: https://github.com/shuding/nextra for more information.
 
-<Callout>
-You can also use [`<style jsx>`](https://nextjs.org/docs/basic-features/built-in-css-support#css-in-js) to style elements inside `theme.config.js`.
-</Callout>
+ You can also use \[\`\`\]\(https://nextjs.org/docs/basic-features/built-in-css-support\#css-in-js\) to style elements inside \`theme.config.js\`.&lt;/Callout&gt;
+

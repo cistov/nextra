@@ -2,19 +2,14 @@
 
 import Callout from 'nextra-theme-docs/callout'
 
-<Callout>
-  An example of the blog theme can be found
-  [here](https://github.com/vercel-solutions/nextjs-portfolio-starter).
-</Callout>
+ An example of the blog theme can be found \[here\]\(https://github.com/vercel-solutions/nextjs-portfolio-starter\).
 
 Similar to the docs theme, you can install the blog theme with the following commands:
 
-### Configurations
+## Configurations
 
 1. Install Next.js, Nextra and React: `yarn add next nextra react react-dom`
-
 2. Install the blog theme: `yarn add nextra-theme-blog`
-
 3. Create the following Next.js config and theme config under the root directory:
 
 ```jsx
@@ -41,7 +36,7 @@ export default {
 }
 ```
 
-4. Create `pages/_app.js` and include the theme stylesheet:
+1. Create `pages/_app.js` and include the theme stylesheet:
 
 ```jsx
 import 'nextra-theme-blog/style.css'
@@ -51,10 +46,7 @@ export default function Nextra({ Component, pageProps }) {
 }
 ```
 
-5. You are good to go!
+1. You are good to go!
 
----
+ You can also use \[\`\`\]\(https://nextjs.org/docs/basic-features/built-in-css-support\#css-in-js\) to style elements inside \`theme.config.js\`.&lt;/Callout&gt;
 
-<Callout>
-You can also use [`<style jsx>`](https://nextjs.org/docs/basic-features/built-in-css-support#css-in-js) to style elements inside `theme.config.js`.
-</Callout>

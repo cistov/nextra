@@ -1,0 +1,23 @@
+# Table of contents
+
+* [Initial page](README.md)
+* [pages](pages/README.md)
+  * [features](pages/features/README.md)
+    * [Themes](pages/features/themes.md)
+    * [Next.js Image](pages/features/image.md)
+    * [mdx](pages/features/mdx.md)
+    * [Next.js SSG](pages/features/ssg.md)
+    * [i18n](pages/features/i18n.md)
+  * [themes](pages/themes/README.md)
+    * [docs](pages/themes/docs/README.md)
+      * [Callout Component](pages/themes/docs/callout.md)
+      * [Docs Theme](pages/themes/docs/index.md)
+      * [Bleed](pages/themes/docs/bleed.md)
+    * [blog](pages/themes/blog/README.md)
+      * [Get Started](pages/themes/blog/index.md)
+  * [Get Started](pages/get-started.md)
+  * [index](pages/index.md)
+  * [advanced](pages/advanced/README.md)
+    * [Code Highlighting](pages/advanced/code-highlighting.md)
+* [Nextra](undefined.md)
+

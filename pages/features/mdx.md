@@ -1,11 +1,12 @@
-# MDX
+# mdx
 
-With Nextra, all your `.md` and `.mdx` files under the pages directory will be rendered with [MDX](https://mdxjs.com/about), it's an
-advanced Markdown format with React component support.
+## MDX
+
+With Nextra, all your `.md` and `.mdx` files under **the pages directory** will be rendered with [MDX](https://mdxjs.com/about), it's an advanced Markdown format with React component support.
 
 You can use import and use React components inside your Markdown files like this:
 
-```markdown
+```text
 import Callout from 'nextra-theme-docs/callout'
 
 **Markdown With React Components**
@@ -21,47 +22,34 @@ Generates:
 
 import Callout from 'nextra-theme-docs/callout'
 
-<div className="p-4 border border-gray-200 dark:border-gray-900 rounded mt-6">
-**Markdown With React Components**
+ \*\*Markdown With React Components\*\* \*\*MDX\*\* \(the library\), at its core, transforms MDX \(the syntax\) to JSX. It receives an MDX string and outputs a \_JSX string\_. It does this by parsing the MDX document to a syntax tree and then generates a JSX document from that tree.
 
-<Callout emoji="✅">
-  **MDX** (the library), at its core, transforms MDX (the syntax) to JSX. It
-  receives an MDX string and outputs a _JSX string_. It does this by parsing the
-  MDX document to a syntax tree and then generates a JSX document from that
-  tree.
-</Callout>
-</div>
+### Heading
 
-## Heading
+## **Hello**, This Is a _Title_ Inside `h1`
 
-<br />
+\*\*Hello\*\*, This Is a \_Title\_ Inside \`h2\` {/ _using html tag to avoid being rendered in the sidebar_ /}
 
-# **Hello**, This Is a _Title_ Inside `h1`
+#### **Hello**, This Is a _Title_ Inside `h3`
 
-<h2>**Hello**, This Is a _Title_ Inside `h2`</h2>
-{/* using html tag to avoid being rendered in the sidebar */}
+**Hello, This Is a Title Inside h4**
 
-### **Hello**, This Is a _Title_ Inside `h3`
+**Hello, This Is a Title Inside h5**
 
-#### **Hello**, This Is a _Title_ Inside `h4`
+**Hello, This Is a Title Inside h6**
 
-##### **Hello**, This Is a _Title_ Inside `h5`
-
-###### **Hello**, This Is a _Title_ Inside `h6`
-
-## List
+### List
 
 1. one
 2. two
 3. three
+4. one
+5. two
+6. three
 
-- one
-- two
-- three
+### Task List
 
-## Task List
-
-```markdown
+```text
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
@@ -69,29 +57,29 @@ import Callout from 'nextra-theme-docs/callout'
 
 Renders
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+* [x] Write the press release
+* [ ] Update the website
+* [ ] Contact the media
 
-## Syntax Highlighting
+### Syntax Highlighting
 
 Automatica syntax highlighting:
 
-````markdown
+```text
 ```js
 console.log('hello, world')
 ```
-````
+```
 
 Renders:
 
-```js
+```javascript
 console.log('hello, world')
 ```
 
 You can also add the `highlight=<line|range>` modifier to highlight specific lines:
 
-````markdown
+```text
 ```jsx highlight=4,6-8
 import useSWR from 'swr'
 
@@ -103,20 +91,15 @@ function Profile() {
   return <div>hello {data.name}!</div>
 }
 ```
-````
-
-```jsx highlight=4,6-8
-import useSWR from 'swr'
-
-function Profile() {
-  const { data, error } = useSWR('/api/user', fetcher)
-
-  if (error) return <div>failed to load</div>
-  if (!data) return <div>loading...</div>
-  return <div>hello {data.name}!</div>
-}
 ```
 
+\`\`\`jsx highlight=4,6-8 import useSWR from 'swr'
+
+function Profile\(\) { const { data, error } = useSWR\('/api/user', fetcher\)
+
+if \(error\) return failed to load if \(!data\) return loading... return hello {data.name}! }
+
+```text
 ## Inline Code
 
 You can use \`content\` to wrap inline code content like: `let x = 1`.
@@ -157,6 +140,5 @@ React components and Markdown can be **mixed together**, for instance:
 
 Renders:
 
-> <Callout>
->   Give [**Nextra**](https://github.com/shuding/nextra) a star!
-> </Callout>
+> Give \[\*\*Nextra\*\*\]\(https://github.com/shuding/nextra\) a star!
+
