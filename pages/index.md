@@ -12,5 +12,3 @@ Here's what you will get in 1 minute:
 
 !\[Nextra Example\]\(../public/demo.png\)
 
-![](../.gitbook/assets/demo.png)
-
