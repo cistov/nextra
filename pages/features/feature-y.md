@@ -1,12 +1,14 @@
 ---
-description: Page desc
+description: Page description
 ---
 
 # Feature Y
 
-Intro text
+{% file src="../../.gitbook/assets/demo.png" %}
 
 ## Some text
+
+
 
 ### Subheading
 
@@ -18,4 +20,10 @@ Abc dsdsa
 * fdrwerwe
 * rewrwe
 * fsdfsdfs
+
+{% hint style="info" %}
+Hint here
+{% endhint %}
+
+> quote
 
