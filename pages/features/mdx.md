@@ -6,7 +6,7 @@ With Nextra, all your `.md` and `.mdx` files under **the pages directory** will 
 
 You can use import and use React components inside your Markdown files like this:
 
-```text
+```
 import Callout from 'nextra-theme-docs/callout'
 
 **Markdown With React Components**
@@ -22,7 +22,7 @@ Generates:
 
 import Callout from 'nextra-theme-docs/callout'
 
- \*\*Markdown With React Components\*\* \*\*MDX\*\* \(the library\), at its core, transforms MDX \(the syntax\) to JSX. It receives an MDX string and outputs a \_JSX string\_. It does this by parsing the MDX document to a syntax tree and then generates a JSX document from that tree.
+&#x20;\*\*Markdown With React Components\*\* \*\*MDX\*\* (the library), at its core, transforms MDX (the syntax) to JSX. It receives an MDX string and outputs a \_JSX string\_. It does this by parsing the MDX document to a syntax tree and then generates a JSX document from that tree.
 
 ### Heading
 
@@ -49,7 +49,7 @@ import Callout from 'nextra-theme-docs/callout'
 
 ### Task List
 
-```text
+```
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
@@ -65,11 +65,11 @@ Renders
 
 Automatica syntax highlighting:
 
-```text
+````
 ```js
 console.log('hello, world')
 ```
-```
+````
 
 Renders:
 
@@ -79,7 +79,7 @@ console.log('hello, world')
 
 You can also add the `highlight=<line|range>` modifier to highlight specific lines:
 
-```text
+````
 ```jsx highlight=4,6-8
 import useSWR from 'swr'
 
@@ -91,15 +91,15 @@ function Profile() {
   return <div>hello {data.name}!</div>
 }
 ```
-```
+````
 
 \`\`\`jsx highlight=4,6-8 import useSWR from 'swr'
 
-function Profile\(\) { const { data, error } = useSWR\('/api/user', fetcher\)
+function Profile() { const { data, error } = useSWR('/api/user', fetcher)
 
-if \(error\) return failed to load if \(!data\) return loading... return hello {data.name}! }
+if (error) return failed to load if (!data) return loading... return hello {data.name}! }
 
-```text
+````
 ## Inline Code
 
 You can use \`content\` to wrap inline code content like: `let x = 1`.
@@ -136,9 +136,8 @@ React components and Markdown can be **mixed together**, for instance:
 > <Callout>
 >   Give [**Nextra**](https://github.com/shuding/nextra) a star!
 > </Callout>
-```
+````
 
 Renders:
 
-> Give \[\*\*Nextra\*\*\]\(https://github.com/shuding/nextra\) a star!
-
+> &#x20;Give \[\*\*Nextra\*\*]\(https://github.com/shuding/nextra) a star!
