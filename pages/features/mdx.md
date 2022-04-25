@@ -2,9 +2,21 @@
 
 ## MDX
 
-With Nextra, all your `.md` and `.mdx` files under **the pages directory** will be rendered with [MDX](https://mdxjs.com/about), it's an advanced Markdown format with React component support.
+With Nextra, all your `.md` and `.mdx` files under **the pages directory** will be rendered with [MDX](https://mdxjs.com/about), it's an advanced `Markdown` format with React component support.
 
-You can use import and use React components inside your Markdown files like this:
+## Heading
+
+{% tabs %}
+{% tab title="First Tab" %}
+Content 1
+{% endtab %}
+
+{% tab title="Second Tab" %}
+Content 2
+{% endtab %}
+{% endtabs %}
+
+You can use import and use [Reac](feature-x.md)t <mark style="color:red;">components</mark> inside your Markdown files like this:
 
 ```
 import Callout from 'nextra-theme-docs/callout'
