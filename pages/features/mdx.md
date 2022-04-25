@@ -4,6 +4,16 @@
 
 With Nextra, all your `.md` and `.mdx` files under **the pages directory** will be rendered with [MDX](https://mdxjs.com/about), it's an advanced `Markdown` format with React component support.
 
+
+
+<details>
+
+<summary>Title </summary>
+
+Expandable content
+
+</details>
+
 ## Heading
 
 {% tabs %}
